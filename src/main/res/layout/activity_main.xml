@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/cloud_img"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:src="@drawable/cloud" />
+    <TextView
+        android:layout_below="@+id/cloud_img"
+        android:id="@+id/app_name_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Video_Uploader"
+        android:textSize="40dp"
+        android:textStyle="italic"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+    <TextView
+        android:textStyle="italic"
+        android:layout_below="@+id/app_name_txt"
+        android:id="@+id/app_slogan_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Running out of Storage... Don't worry we are here"
+        android:textSize="20dp"
+        android:layout_margin="10dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/nxt_pg_btn"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/app_slogan_txt"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="146dp"
+        android:text="Let's Go..."
+        android:textStyle="italic" />
+
+</RelativeLayout>

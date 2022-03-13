@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select_Video"
+        android:textStyle="italic"
+        android:layout_margin="10dp"
+        android:id="@+id/title_txt"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/purple_500"
+        />
+    <FrameLayout
+        android:layout_below="@+id/title_txt"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_margin="10dp"
+        android:id="@+id/frame_lay"
+        >
+        <VideoView
+            android:layout_margin="10dp"
+            android:id="@+id/view_video"
+            android:layout_below="@+id/title_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            />
+
+    </FrameLayout>
+
+    <EditText
+
+        android:id="@+id/vid_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame_lay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Enter video name"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:id="@+id/lin_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vid_name"
+        android:weightSum="2"
+        android:layout_margin="10dp">
+        <Button
+            android:textStyle="italic"
+            android:id="@+id/camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Camera"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:layout_weight="1"/>
+        <Button
+            android:textStyle="italic"
+            android:layout_weight="1"
+            android:id="@+id/ch_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textAllCaps="false"
+            android:text="Choose"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_lay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_lay"
+        android:weightSum="2"
+        android:layout_margin="10dp">
+        <Button
+            android:id="@+id/upl_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Upload"
+            android:textStyle="italic"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/dwn_btn"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Download"
+            android:textAllCaps="false"
+            android:textSize="15sp"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Loginpage"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/acc_img"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:padding="8dp"
+        android:src="@drawable/account"
+        android:elevation="20dp"
+        />
+
+    <TextView
+        android:layout_below="@+id/acc_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textStyle="italic"
+        android:id="@+id/login_txt"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+
+        android:textAlignment="center"
+        android:textSize="40sp"
+
+        />
+
+    <EditText
+        android:textStyle="italic"
+        android:id="@+id/email"
+        android:layout_margin="8dp"
+        android:layout_below="@+id/login_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textSize="20sp"
+
+        />
+    <EditText
+        android:textStyle="italic"
+        android:id="@+id/password"
+        android:layout_margin="8dp"
+        android:layout_below="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+
+        />
+    <Button
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/password"
+        android:id="@+id/login_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        />
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:weightSum="2"
+        android:layout_centerHorizontal="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:id="@+id/txt1"
+            android:text="Didn't Have Account?"
+            android:padding="5dp"
+
+            />
+        <TextView
+
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:text="Register"
+            android:textColor="#3867d6"
+            android:id="@+id/regis_nav"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.textview.MaterialTextView
+
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download_videos"
+        android:layout_margin="8dp"
+        android:id="@+id/title_txt"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/purple_500">
+
+    </com.google.android.material.textview.MaterialTextView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/title_txt"
+        android:padding="8dp"
+        android:id="@+id/frame"
+        android:layout_margin="8dp"
+
+        >
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:id="@+id/getvid"
+            >
+        </VideoView>
+
+    </FrameLayout>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/frame"
+        android:layout_marginTop="40dp"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:id="@+id/getvidname"
+        tools:text="@tools:sample/cities">
+
+    </androidx.appcompat.widget.AppCompatEditText>
+
+    <Button
+        android:layout_below="@id/getvidname"
+        android:layout_marginTop="50dp"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text="Download"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:id="@+id/getdwn"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+</RelativeLayout>
